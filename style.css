@@ -1,14 +1,21 @@
 body{
-    text-align: center;
+  text-align: center;
   font-size:30px;
+  margin:20px 30px;
 }
 
 #kaitou{
-  height:30px;
-  width:50px;
+  width:9em;
 }
 
 #hazure{
   color:red;
+  margin-top:10px;
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance:textfield;
+}
