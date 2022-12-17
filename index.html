@@ -12,10 +12,14 @@
   </h1>
   <div><span id="mondai"></span><sup id="ruijou"></sup>
     =
-    <input id="kaitou"></input>
+    <input id="kaitou" onkeydown="return event.keyCode !== 69" type="number" placeholder="半角で数値を入力"></input>
     <button id="kaitouButton" onclick='kaitou()'>回答</button>
   </div>
   <div id="hazure"></div>
+  <div id="gotoudiv" style="margin-top:80px; text-align: left;">誤答した問題
+    <p></p>
+    <p id="gotoudivend"></p>
+  </div>
   <script value='text/javascript' src='script.js'></script>
 </body>
 </html>
